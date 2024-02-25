@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --action:#6A29F4;
+    --hero:#FFFFFF;
+    --text:#F5F3FA;
+    --support:#DED6F0;
+    --design:#867B9E;
+    --surface-secondary:#3D354D;
+    --surface-primary:#1D152D;
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
