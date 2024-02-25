@@ -15,4 +15,152 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    margin:0px;
+    padding:0px;
+    display:flex;
+}
+
+li {
+    list-style: none;
+}
+
+.sideBar {
+    background-color: var(--surface-primary);
+    display:flex;
+    flex-direction: column;
+    color:var(--hero);
+    padding:8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height:100vh;
+    gap:32px;
+    padding-right: 32px;;
+}
+
+ul {
+    padding:0px;
+    margin:0px;
+}
+
+.menuItem {
+    padding:16px;
+}
+
+.menuItem:hover {
+    background-color: var(--surface-secondary);
+}
+
+.rightBodyColumn {
+    width:100%;
+}
+
+.actionBar {
+    display:flex;
+    padding:16px;
+    background: var(--surface-primary);
+    color:var(--text);
+    flex-direction: column;
+    gap:32px;
+}
+
+.actionBarRow1 {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchWrapperRow {
+    display:inherit;
+    gap:16px;
+    align-items: center;
+    flex:1;
+}
+
+.profileSmall {
+    min-width: 48px;
+    min-height:48px;
+    background:var(--hero);
+    border-radius: 50%;
+    flex:1 0 0;
+}
+
+.smallProfileWrapperRow {
+    display: inherit;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+
+label {
+    flex:1;
+    display:flex;
+    padding:12px;
+}
+
+input {
+    padding:6px;
+    border-radius: 8px;
+    border-style: none;
+    border: 2px solid var(--support);
+    background:transparent;
+    flex:1;
+}
+
+.actionBarRow2 {
+    display:flex;
+    justify-content: space-between;
+}
+
+.profileLarge {
+    width: 64px;
+    height: 64px;
+    background: var(--hero);
+    border-radius: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.largeProfileWrapperRow {
+    display:flex;
+    gap:16px;
+}
+
+.buttonWrapperRow {
+    display:flex;
+    gap:8px;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 12px;
+    border-style: none;
+    color:var(--text);
+    border-radius: 8px;
+}
+
+button:hover {
+    background:var(--surface-secondary);
+}
+
+.primaryButton {
+    background: var(--action);
+}
+
+.secondaryButton {
+    border:2px solid var(--action);
+    color:var(--action);
+    background: transparent;
+}
+
+.secondaryButton:hover {
+    color:var(--text);
+}
+
+.tertiaryButton {
+    background: transparent;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    color:var(--action);
 }
