@@ -2,12 +2,13 @@
 
 :root {
     --action:#6A29F4;
-    --hero:#FFFFFF;
-    --text:#F5F3FA;
-    --support:#DED6F0;
-    --design:#867B9E;
-    --surface-secondary:#3D354D;
-    --surface-primary:#1D152D;
+    --hero:#1D152D;
+    --text:#3D354D;
+    --support:#867B9E;
+    --design:#DED6F0;
+    --surface-secondary:#F5F3FA;
+    --surface-primary:#FFFFFF;
+    
     h1 {
         padding:0px;
         margin:0px;
@@ -66,7 +67,7 @@ li {
 }
 
 .sideBar {
-    background-color: rgb(71, 6, 123);
+    background-color: var(--surface-primary);
     display:flex;
     flex-direction: column;
     color:var(--hero);
@@ -74,7 +75,8 @@ li {
     align-items: flex-start;
     justify-content: flex-start;
     gap:32px;
-    padding-right: 32px;;
+    padding-right: 32px;
+    z-index: 2;
 }
 
 ul {
@@ -84,6 +86,15 @@ ul {
 
 .menuItem {
     padding:16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:12px;
+}
+
+.pageTitle {
+    display:flex;
+    gap:12px;
 }
 
 .menuItem:hover {
@@ -145,6 +156,7 @@ input {
     border: 2px solid var(--support);
     background:transparent;
     flex:1;
+    color:var(--hero);
 }
 
 .actionBarRow2 {
@@ -155,10 +167,10 @@ input {
 .profileLarge {
     width: 64px;
     height: 64px;
-    background: var(--hero);
     border-radius: 50%;
-    flex-grow: 0;
     flex-shrink: 0;
+    overflow: hidden;
+    display: inline-block;
 }
 
 .largeProfileWrapperRow {
@@ -176,7 +188,7 @@ input {
 button {
     padding: 12px;
     border-style: none;
-    color:var(--text);
+    color:var(--surface-primary);
     border-radius: 8px;
 }
 
@@ -211,14 +223,14 @@ button:hover {
     padding:16px;
     gap:32px;
     background:var(--surface-secondary);
-    height:100vh;
+    box-shadow: ;
 }
 
 .gridContent {
     display:grid;
     grid-template-columns: repeat(2,1fr);
     gap:16px;
-    grid-template-rows: 44px;
+    grid-template-rows: 44px;   
 }
 
 .projectsHeader {
@@ -237,5 +249,89 @@ button:hover {
     gap:8px;
     border-radius: 12px;
     grid-column: 1fr;
+    border-left: 6px solid var(--support);
 }
+
+.iconRow {
+    flex:1;
+    align-self: flex-end;
+    display: flex;
+    align-items: flex-end;
+    gap:12px;
+    color:var(--support);
+}
+
+.supportText {
+    color:var(--support);
+}
+
+.newsCenterColumn {
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+    padding-right: 16px;
+    min-width:350px;
+}
+
+.announcementsContainerColumn {
+    display:flex;
+    flex-direction: column;
+    gap:32px;
+}
+
+.announcementsCard {
+    background: var(--surface-primary);
+    border-radius: 12px;
+    padding:16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.columnWithUnderline {
+    border-bottom: 2px solid var(--design);
+    padding-bottom: 12px;
+}
+
+.trendingContainerColumn {
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.trendingCard {
+    background: var(--surface-primary);
+    border-radius: 12px;
+    padding:16px;
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+}
+
+.trendingProfileRow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.profileDefault {
+    width:42px;
+    height: 42px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.circleImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.shadow {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
 
